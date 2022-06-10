@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+import Book from './component/Book/Book'
+
+import BookRecords from  './database/Book'
+
 function App() {
+  console.log(BookRecords.map((book)=>book.id))
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='book-title'>Hogwartz Book Store</h1>
+      <div className="Books">
+      { BookRecords.map(
+        (book)=>
+        <Book image = {book.image} book={book.title} author={book.author}/>) }
+
+      </div>
+      
+
+      
+     
     </div>
   );
 }

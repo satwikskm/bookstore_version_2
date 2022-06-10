@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+body{
+    background: linear-gradient(#740001,#AE0001,#D3A625,#EEBA30);
+}
+
+.card{
+    font-family: 'Satisfy', cursive;
+    margin: 20px 20px;
+    padding: 30px 10px;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5) ;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.card img{
+    width: 80%;
+    height: 50vh;
+    border-radius: 10px;
+    margin-left: 40px;
+}
